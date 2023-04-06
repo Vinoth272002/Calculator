@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+        <form >
+            <div class="display">
+                <input type="text" name="display" id="txtbox">
+            </div>
+             <div>
+                <input type="button"  value="AC" class="operator" onclick="AC()">
+                <input type="button"  value="DE" class="operator" onclick="DE()">
+                <input type="button"  value="."  class="operator" onclick="num('.')">
+                <input type="button"  value="/" class="operator"  onclick="num('/')">
+            </div>
+            <div>
+                 <input type="button"  value="7" onclick="num('7')" >
+                 <input type="button"  value="8" onclick="num('8')">
+                 <input type="button"  value="9" onclick="num('9')">
+                 <input type="button"  value="*" onclick="num('*')" class="operator">
+             </div>
+             <div>
+                 <input type="button"  value="4" onclick="num('4')">
+                 <input type="button"  value="5" onclick="num('5')">
+                 <input type="button"  value="6" onclick="num('6')">
+                 <input type="button"  value="-" onclick="num('-')" class="operator">
+             </div>
+             <div>
+                 <input type="button"  value="1" onclick="num('1')">
+                 <input type="button"  value="2" onclick="num('2')">
+                 <input type="button"  value="3" onclick="num('3')">
+                 <input type="button"  value="+" onclick="num('+')" class="operator">
+             </div>
+             <div>
+                 <input type="button"  value="00" onclick="num('00')">
+                 <input type="button"  value="0"  onclick="num('0')">
+                 <input type="button"  value="="  onclick="equal()" class="equal operator">
+             </div>
+        </form>
+    </div>
+  </div>
+
+  <!-- ========Script======= -->
+  <script src="./script.js"></script>
+</body>
+</html>
